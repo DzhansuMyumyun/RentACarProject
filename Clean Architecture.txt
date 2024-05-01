@@ -1,0 +1,34 @@
+Clean Architecture
+ - Application
+ - Domain
+ - Infrastructure
+ - Persistence 
+ - WebAPI
+
+
+Steps
+1. Create all projects with folders
+2. Install needed niget packages
+3. Domain -> Entities -> Create the needed class (Brand)
+4. Persistence -> Context -> Create the BaseDBContext
+5. Application -> Services -> Repositories -> Create the interface for repo (IBrandRepository)
+6. Persistence -> Repositories -> Create the main repo (BrandRepository)
+7. Persistence -> Create the class PersistenceServiceRegistration to get connection string with json
+8. WebAPI -> appsettings -> add the connection for the new Db
+9. WebAPI.csproj -> add the needed packages
+10.Tools -> Nuget Package Menager(Console) -> set WebAPI as standart 
+11.add the needed builder Service... to the Program.cs -> set the ...Persitance as default project
+12.the code to create the db = add-migration (name) -> update database
+
+13. Features -> Brands
+
+
+
+CQRS = Command (CRUD) - Query Separation
+
+
+
+
+
+
+
